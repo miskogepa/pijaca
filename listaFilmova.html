@@ -1,0 +1,58 @@
+<!-- ovo je web app koja izlistava 4 filma sa naslovima i podacima o filmu i cenom . kada korisnik klikne na dugme gledaj film, dugme se onemogucava i ta cena se dodaje u ukupnu cenu. korisnik moze da izbaci film iz korpe. -->
+ <!-- kada izbaci film iz jkorpe cena se oduzima iz ukupne cene. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista filmova</title>
+    <link rel="stylesheet" href="listaFilmova.css">
+</head>
+<body>
+    <!-- container u kome ce se nalaziti 4 kartice sa filmovima -->
+    <div class="container">
+        <!-- kartica 1 -->
+        <div class="kartica">
+            <h2  class="naslov">Harry Potter</h2>
+            <p>Godina: 2001</p>
+            <p>Reziser: Chris Columbus</p>
+            <p class="cena">cena:200</p>
+            <button class="gledaj" onclick="dodajFilm(this)">Gledaj film</button>
+        </div>
+        <!-- kartica 2 -->
+        <div class="kartica">
+            <h2 class="naslov">Lord of the Rings</h2>
+            <p>Godina: 2001</p>
+            <p>Reziser: Peter Jackson</p>
+            <p class="cena">cena:250</p>
+            <button class="gledaj" onclick="dodajFilm(this)">Gledaj film</button>
+        </div>
+        <!-- kartica 3 -->
+        <div class="kartica">
+            <h2 class="naslov">Star Wars</h2>
+            <p>Godina: 1977</p>
+            <p>Reziser: George Lucas</p>
+            <p class="cena">cena:150</p>
+            <button class="gledaj" onclick="dodajFilm(this)">Gledaj film</button>
+        </div>
+        <!-- kartica 4 -->
+        <div class="kartica">
+            <h2  class="naslov">Indiana Jones</h2>
+            <p>Godina: 1981</p>
+            <p>Reziser: Steven Spielberg</p>
+            <p class="cena">cena:180</p>
+            <button class="gledaj" onclick="dodajFilm(this)">Gledaj film</button> <!-- ovde se poziva funkcija dodajFilm nju cemo tek napraviti kasnije u js zato nam treba this i onclick a this je dugme na koje je kliknuto i kasnije ce znaciti da znamo koje je dugme kliknuto -->
+        </div>
+    </div> <!-- Closing the container div -->
+
+    <!-- container u kome ce se nalaziti korpa sa filmovima i pisace naslov i cena filma iz korpe ce korisnik moci da ukloni film na dugme ukloni -->
+   <div class="korpa">
+       <h2>Ukupna cena: <span id="ukupnaCena">0</span></h2>
+       <h3>Dodati filmovi:</h3>
+       <div id="korpaFilmovi"></div>
+   </div>
+    
+    <script src="listaFilmova.js"></script>
+</body>
+</html>

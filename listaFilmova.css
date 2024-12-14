@@ -1,0 +1,75 @@
+/* sada dodajmo stilove za container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  /* dodajmo padding i border */
+    padding: 10px;
+    /*dodajemo pozadinu za container */
+    background-color: #f1f1f1;
+}
+
+/* dodajmo stilove za card */
+.kartica{
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*stil za dodaj dugme */
+.gledaj {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+/*stil za naslov */
+.naslov {
+  text-align: center;
+  margin-bottom: 20px;
+  color: aquamarine;
+}
+
+.korpa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.korpa h3 {
+  margin-top: 10px;
+  color: #333;
+}
+
+#korpaFilmovi {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 10px;
+}
+
+.film {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+.gledaj:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}/* ovde je dodat stil za onemoguceno dugme a gledaj:disabled je selektor koji se koristi za selektovanje onemogucenog dugmeta i klasu smo dobili dodavanjem disabled atributa u html-u */
